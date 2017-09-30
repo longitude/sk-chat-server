@@ -1,5 +1,6 @@
-Simple node chat server using mongoDB for storage and socket.io for real time communication
+### Simple node chat server using mongoDB for storage and socket.io for real time communication
 
+## Installation
 
 Start local mongo server
 
