@@ -150,6 +150,7 @@ app.get("/messages", function(req, res) {
 
 app.post("/users", function(req, res) {
   var collection = db.collection("users");
+  req.body.logoutTime = Date.now();
   collection.insert(req.body, function(err, messages) {
     if (err) res.send(err);
     res.send(messages);
